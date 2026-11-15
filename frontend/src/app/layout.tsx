@@ -1,7 +1,7 @@
 'use client';
 import './globals.css';
 import type { ReactNode } from 'react';
-import { HeeraMonProvider } from '@/context/HeeraMonContext';
+import HeeraMonProviderClient from '@/components/HeeraMonProviderClient';
 
 export const metadata = {
   title: 'HeeraMon',
@@ -12,8 +12,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-white text-gray-800 antialiased">
-        <HeeraMonProvider>{children}</HeeraMonProvider>
+        <HeeraMonProviderClient>{children}</HeeraMonProviderClient>
       </body>
     </html>
   );
 }
+
