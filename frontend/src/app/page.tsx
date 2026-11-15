@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar';
 import ChatView from '@/components/ChatView';
 import { api } from '@/lib/api';
 import { useHeeraMon } from '@/context/HeeraMonContext';
-import ChatView from '@/components/ChatView';
 
 export default function HomePage() {
   const { user, conversation, messages, preferences, jobs, setUser, setConversation, setMessages, setPreferences, setJobs } = useHeeraMon();
