@@ -1,0 +1,11 @@
+# Exclude generated artefacts and large folders from agent scans
+.git/
+node_modules/
+.venv/
+venv/
+env/
+frontend/.next/
+frontend/.output/
+backend/__pycache__/
+*.db
+*.log
