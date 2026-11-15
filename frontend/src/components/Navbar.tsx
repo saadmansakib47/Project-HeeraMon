@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -28,7 +29,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-border/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        
         {/* Brand identity */}
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActiveTab('chat')}>
           <div className="relative w-10 h-10 rounded-full overflow-hidden border border-amber-300 shadow-sm bg-gradient-to-tr from-amber-50 to-emerald-50 flex items-center justify-center">
@@ -131,3 +131,5 @@ export const Navbar: React.FC<NavbarProps> = ({
     </header>
   );
 };
+
+export default Navbar;

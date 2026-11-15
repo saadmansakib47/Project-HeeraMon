@@ -1,4 +1,8 @@
+'use client';
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import type { Preference, Conversation, Job, Message, User } from '@/types';
+
 import type { Preference, Conversation, Job, Message, User } from '@/types';
 
 interface HeeraMonState {
