@@ -1,3 +1,4 @@
+'use client';
 import './globals.css';
 import type { ReactNode } from 'react';
 import { HeeraMonProvider } from '@/context/HeeraMonContext';
