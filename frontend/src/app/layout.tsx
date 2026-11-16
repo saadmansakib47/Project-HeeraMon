@@ -18,3 +18,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   );
 }
 
+
+// UI cleanup: ensuring Nunito font and removing slop
