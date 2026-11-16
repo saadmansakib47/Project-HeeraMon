@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+      },
+    },
+    // existing extend block will be merged
+
+    extend: {
       colors: {
         background: "#fafafa",
         surface: "#ffffff",

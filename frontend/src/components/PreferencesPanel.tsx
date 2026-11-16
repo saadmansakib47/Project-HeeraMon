@@ -200,7 +200,7 @@ export const PreferencesPanel: React.FC<PreferencesPanelProps> = ({
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-rose-600" />
             <h2 className="text-sm font-bold text-foreground">Hard Requirements ({hardPrefs.length})</h2>
-            <span className="text-xs text-muted">— Mandatory filters. Non-negotiable conditions.</span>
+            <span className="text-xs text-muted">Mandatory filters. Non-negotiable conditions.</span>
           </div>
           {hardPrefs.length === 0 ? (
             <p className="text-xs text-muted bg-neutral-50 p-3 rounded-xl border border-dashed border-neutral-200">
@@ -216,7 +216,7 @@ export const PreferencesPanel: React.FC<PreferencesPanelProps> = ({
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-emerald-600" />
             <h2 className="text-sm font-bold text-foreground">Soft Preferences ({softPrefs.length})</h2>
-            <span className="text-xs text-muted">— Desirable attributes that allow intelligent trade-offs.</span>
+            <span className="text-xs text-muted">Desirable attributes that allow intelligent trade-offs.</span>
           </div>
           {softPrefs.length === 0 ? (
             <p className="text-xs text-muted bg-neutral-50 p-3 rounded-xl border border-dashed border-neutral-200">
