@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
 import { Send, Sparkles, User as UserIcon, ArrowRight, CheckCircle2, AlertCircle } from 'lucide-react';
 import { Message, Match } from '../types';
@@ -111,7 +112,7 @@ export const ChatView: React.FC<ChatViewProps> = ({
                     : 'bg-neutral-50 text-neutral-800 border border-neutral-200/90 rounded-bl-none'
                 }`}
               >
-                <div className="whitespace-pre-wrap">{msg.content}</div>
+                <ReactMarkdown className="whitespace-pre-wrap">{msg.content}</ReactMarkdown>
 
                 {/* Inline job match preview if attached to assistant message */}
                 {msg.role === 'assistant' && recentMatches.length > 0 && (
