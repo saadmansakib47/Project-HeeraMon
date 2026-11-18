@@ -110,7 +110,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-50 hover:bg-neutral-100 border border-neutral-300 rounded-lg shadow-sm transition-all disabled:opacity-50"
             title="Trigger background search cycle across job sources"
           >
-            <Sparkles className={`w-3.5 h-3.5 text-amber-500 ${isSearching ? 'animate-spin' : ''}`} />
+            {/* Removed glitter Sparkles icon */}>
             <span className="hidden sm:inline">{isSearching ? 'Scouting...' : 'Scout Horizon'}</span>
           </button>
 
